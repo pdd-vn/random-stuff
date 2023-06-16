@@ -37,7 +37,7 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "1000m"
-          volumes:
-            - name: dshm
-              emptyDir:
-                medium: Memory
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
