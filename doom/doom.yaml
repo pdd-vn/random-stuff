@@ -29,7 +29,10 @@ spec:
         - name: doom-container
           image: kasmweb/doom:1.13.0
           ports:
-            - containerPort: 80
+            - containerPort: 6901
+          env:
+            - name: VNC_PW
+              value: "password"
           volumeMounts:
             - mountPath: /dev/shm
               name: dshm
